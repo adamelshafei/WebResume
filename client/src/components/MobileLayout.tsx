@@ -40,7 +40,7 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { portfolioData } from "@/config/portfolioData";
-import resumePDF from "@assets/Adam Elshafei, PM.docx_1759861029618.pdf";
+import resumePDF from "@assets/Adam Elshafei, Software Engineer & PM_1759864982539.pdf";
 
 interface MobileLayoutProps {
   onSwitchToDesktop: () => void;

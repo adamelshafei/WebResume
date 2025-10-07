@@ -25,7 +25,7 @@ import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { portfolioData } from "@/config/portfolioData";
-import resumePDF from "@assets/Adam Elshafei, PM.docx_1759861029618.pdf";
+import resumePDF from "@assets/Adam Elshafei, Software Engineer & PM_1759864982539.pdf";
 
 export function Hero() {
   // Extract personal data from portfolio config

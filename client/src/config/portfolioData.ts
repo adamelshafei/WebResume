@@ -24,8 +24,8 @@ export const portfolioData = {
   // This appears in the hero section and throughout the site
   personal: {
     name: "Adam Elshafei",                    // Your full name
-    title: "Product Manager",                 // Your job title/role
-    tagline: "Product Manager specializing in API platforms, payment systems, and data-driven product delivery. I leverage AI-assisted prototyping and lean experimentation to validate features fast and drive product-market fit.",
+    title: "Product Manager & Software Engineer",                 // Your job title/role
+    tagline: "Product Manager with a strong technical foundation in software engineering. I use AI-assisted prototyping to validate features in hours, build data-driven roadmaps, and partner with engineering teams to deliver products that drive growth.",
     email: "adam.elshafei12@gmail.com",      // Contact email
     social: {
       // Add your social media URLs (these appear as icon buttons)
@@ -42,20 +42,20 @@ export const portfolioData = {
   about: {
     // Bio: Array of paragraphs (2-4 recommended for best layout)
     bio: [
-      "I'm a Product Manager with a strong technical background in software engineering. I combine data-driven product strategy with hands-on prototyping to deliver features that users love and businesses need.",
-      "At Valsoft, I owned product strategy for multiple platforms including Agora (API integration platform), RoomMaster (hospitality PMS), and DockMaster (marina management). I led delivery of 20+ API integrations driving 10× adoption and $300K+ ARR growth, and owned a payment platform now processing $10M+ annually.",
-      "I use AI-assisted prototyping (Cursor, Replit, Vercel) to validate ideas in hours instead of weeks, build data-driven roadmaps that improve delivery speed by 30%+, and partner closely with engineering, design, and go-to-market teams to ship winning products."
+      "I'm a Product Manager with a strong technical foundation in software engineering. I combine data-driven product strategy with hands-on prototyping to deliver features that users love and businesses need.",
+      "At Valsoft, I owned product strategy for Agora (API integration platform), RoomMaster (hospitality PMS), and DockMaster (marina management). I led delivery of 20+ API integrations driving 10× adoption and $300K+ ARR growth, and owned end-to-end delivery of a payment platform now processing $10M+ annually.",
+      "I use AI-assisted prototyping (Cursor, Replit) to validate features in hours instead of weeks, build data-driven roadmaps that cut delivery time by 30%+, and partner with engineering, design, and GTM teams to ship winning products."
     ],
     
     // Skills: Array of strings that display as badges
     // Tip: Group related skills together for better visual organization
     skills: [
       // Product & Strategy Skills
-      "Product Strategy", "AI Prototyping", "Product Roadmaps", "PRDs", "Agile/Scrum",
-      "Product Discovery", "Jira", "Confluence", "Figma", "KPIs",
+      "AI Prototyping", "Product Roadmaps", "PRDs", "Agile/Scrum",
+      "Product Discovery", "Jira", "Confluence", "Figma", "Market/Competitor Analysis", "KPIs",
       // Technical Skills
       "Python", "Node.js", "React", "JavaScript", "REST APIs",
-      "Git", "PowerBI", "SQL", "Market Analysis"
+      "Git", "PowerBI", "SQL"
     ]
   },
   
@@ -69,51 +69,68 @@ export const portfolioData = {
   // RECOMMENDED: 3-6 projects for optimal layout (displays in 3-column grid on desktop)
   projects: [
     {
-      id: "1",                                 // Unique ID (use "1", "2", "3", etc.)
+      id: "1",
       title: "Agora API Integration Platform",
-      description: "API integration platform for hospitality connecting Property Management Systems with third-party services (POS, CRMs, channel managers, revenue management systems).",
-      technologies: ["REST APIs", "Lightspeed", "Toast", "Revinate", "Hospitality Tech"],  // Tech badges
-      achievement: "Led data-driven discovery and delivery of 20+ API integrations, driving 10× API adoption and $300K+ ARR growth.",  // Key result/impact
-      liveUrl: "https://valsoft.com/agora",           // Live demo link
-      githubUrl: "https://github.com/valsoft/agora"   // Source code link
+      description: "API integration platform for hospitality connecting Property Management Systems with third-party services including POS, CRMs, channel managers, and revenue management systems.",
+      technologies: ["REST APIs", "Lightspeed", "Toast", "Revinate", "Product Strategy"],
+      achievement: "Led data-driven discovery and delivery of 20+ API integrations, driving 10× API adoption and $300K+ ARR growth.",
+      liveUrl: "https://valsoft.com",
+      githubUrl: "https://github.com/adamelshafei"
     },
     {
       id: "2",
-      title: "Payment Platform",
-      description: "End-to-end payment processing platform with full compliance and regulatory requirements for hospitality and marina industries.",
-      technologies: ["Payment Processing", "Compliance", "REST APIs", "Node.js"],
-      achievement: "Owned end-to-end delivery and compliance of a payment platform now processing $10M+ annually.",
-      liveUrl: "https://valsoft.com/payments",
-      githubUrl: "https://github.com/valsoft/payments"
+      title: "RoomMaster",
+      description: "Legacy hospitality Property Management System (PMS) modernization and feature delivery for hotel and hospitality operations.",
+      technologies: ["Hospitality Tech", "PMS", "Product Strategy", "API Integrations"],
+      achievement: "Owned product strategy and delivery for legacy PMS platform serving hospitality industry.",
+      liveUrl: "https://valsoft.com",
+      githubUrl: "https://github.com/adamelshafei"
     },
     {
       id: "3",
       title: "DockMaster Marina Management",
       description: "The leading marina management platform in the United States, providing comprehensive solutions for marina operations and customer management.",
-      technologies: ["SaaS", "Marina Tech", "Product Strategy", "API Integrations"],
-      achievement: "Owned product strategy and feature delivery, improving operational efficiency for marinas across the US.",
+      technologies: ["SaaS", "Marina Tech", "Product Strategy", "Payment Platform"],
+      achievement: "Owned product strategy and end-to-end delivery of payment platform now processing $10M+ annually.",
       liveUrl: "https://dockmaster.com",
-      githubUrl: "https://github.com/valsoft/dockmaster"
+      githubUrl: "https://github.com/adamelshafei"
     },
     {
       id: "4",
-      title: "RBI Mobile App Component Library",
-      description: "Shared UI component library for mobile app redesigns across Tim Hortons, Burger King, and Popeyes brands.",
+      title: "Mobile Component Library (Tim Hortons, Burger King, Popeyes)",
+      description: "Shared UI component library for mobile app redesigns across Restaurant Brands International's major QSR brands.",
       technologies: ["React Native", "UI Components", "Cross-functional Coordination"],
-      achievement: "Coordinated 3 engineering teams, design and QA to deliver reusable components across major QSR brands.",
+      achievement: "Coordinated 3 engineering teams, design and QA to deliver reusable component library across major brands.",
       liveUrl: "https://rbi.com",
-      githubUrl: "https://github.com/rbi/mobile-components"
+      githubUrl: "https://github.com/adamelshafei"
     },
     {
       id: "5",
-      title: "DevOps Monitoring Dashboard",
-      description: "Internal DevOps monitoring dashboard integrating Jenkins and GitLab pipelines, providing Grafana-style visibility for engineering teams.",
-      technologies: ["React", "Node.js", "Jenkins", "GitLab", "DevOps"],
-      achievement: "Built and deployed real-time monitoring dashboard improving visibility and efficiency for internal teams at Ericsson.",
+      title: "PowerBI & SQL Retail Dashboards",
+      description: "Automated PowerBI and SQL dashboards for tracking retail product performance across major US and Canada retailers.",
+      technologies: ["PowerBI", "SQL", "Data Analytics", "Automation"],
+      achievement: "Built dashboards and automated reporting workflows, saving 15+ hours per week while delivering insights for 20+ retailers.",
+      liveUrl: "https://rbi.com",
+      githubUrl: "https://github.com/adamelshafei"
+    },
+    {
+      id: "6",
+      title: "Tim Hortons Delivery Program",
+      description: "National rollout of third-party delivery (UberEats, DoorDash, SkipTheDishes) to 1000+ Tim Hortons locations during COVID-19 response.",
+      technologies: ["Program Management", "Delivery Platforms", "Operations"],
+      achievement: "Managed onboarding for 1000+ stores and coordinated launch of 15+ new SKUs nationwide during pandemic response.",
+      liveUrl: "https://timhortons.com",
+      githubUrl: "https://github.com/adamelshafei"
+    },
+    {
+      id: "7",
+      title: "Ericsson Internal DevOps Tools",
+      description: "Internal documentation tool and DevOps monitoring dashboard integrating CI/CD pipelines for engineering teams.",
+      technologies: ["React", "Node.js", "Angular", "Java", "DevOps"],
+      achievement: "Built documentation generation tool and monitoring dashboard providing DevOps visibility for internal teams.",
       liveUrl: "https://ericsson.com",
-      githubUrl: "https://github.com/ericsson/devops-dashboard"
+      githubUrl: "https://github.com/adamelshafei"
     }
-    // To add more projects: copy the structure above and increment the ID
   ],
   
   // ============================================================================
@@ -125,16 +142,19 @@ export const portfolioData = {
       id: "1",
       company: "Valsoft",
       position: "Product Manager",
-      location: "Toronto, Canada",
-      startDate: "June 2024",
-      endDate: "Present",
-      current: true,
-      description: "Leading product strategy and delivery for multiple B2B SaaS platforms in hospitality and marina management industries.",
+      location: "Montreal, Canada",
+      startDate: "March 2022",
+      endDate: "March 2025",
+      current: false,
+      description: "Led product strategy and delivery for multiple B2B SaaS platforms in hospitality and marina management industries.",
       achievements: [
-        "Owned product strategy for Agora (API integration platform), RoomMaster (hospitality PMS), and DockMaster (marina management)",
-        "Led delivery of 20+ API integrations driving 10× adoption and $300K+ ARR growth",
-        "Owned end-to-end delivery of payment platform now processing $10M+ annually",
-        "Built data-driven roadmaps that improved delivery speed by 30%+"
+        "Owned product strategy for Agora (API integration platform), RoomMaster (legacy hospitality PMS), and DockMaster (U.S. leading marina management platform)",
+        "Used AI-assisted prototyping (Cursor, Replit) to validate new features in hours, not weeks, boosting iteration speed and product-market fit confidence",
+        "Led data-driven discovery and delivery of 20+ API integrations (Lightspeed, Toast, Revinate, etc.), driving 10× API adoption and $300K+ ARR growth",
+        "Owned end-to-end delivery and compliance of a payment platform now processing $10M+ annually",
+        "Built data-driven PRDs, roadmaps and discovery processes that cut feature delivery time by 30%+ from both engineering and QA teams",
+        "Contributed to technical design and architecture projects. Led backend performance initiative that reduced peak traffic latency by 80% (20s → 3s)",
+        "Partnered with marketing and sales on GTM, training, and integration-launch campaigns"
       ]
     },
     {
@@ -142,29 +162,58 @@ export const portfolioData = {
       company: "Restaurant Brands International (RBI)",
       position: "Associate Product Manager",
       location: "Toronto, Canada",
-      startDate: "January 2024",
-      endDate: "June 2024",
+      startDate: "October 2021",
+      endDate: "March 2022",
       current: false,
-      description: "Led mobile app redesign initiatives across Tim Hortons, Burger King, and Popeyes brands.",
+      description: "Owned shared UI component library delivery for mobile app redesigns across major QSR brands.",
       achievements: [
-        "Coordinated 3 engineering teams, design and QA to deliver shared UI component library",
-        "Defined product requirements and user stories for mobile app component systems",
-        "Partnered with UX/UI teams to ensure consistent brand experience across QSR applications"
+        "Owned shared UI component library delivery for mobile app redesigns across Tim Hortons, Burger King, and Popeyes",
+        "Coordinated 3 engineering teams, design and QA, managing dependencies and running cross-functional grooming to build alignment",
+        "Created and owned the backlog of user stories and epics for the mobile app redesigns"
       ]
     },
     {
       id: "3",
-      company: "Ericsson",
-      position: "Software Engineer",
-      location: "Ottawa, Canada",
-      startDate: "May 2023",
-      endDate: "August 2023",
+      company: "Restaurant Brands International (RBI)",
+      position: "Senior Data Analyst",
+      location: "Toronto, Canada",
+      startDate: "March 2020",
+      endDate: "October 2021",
       current: false,
-      description: "Built internal DevOps tools and monitoring systems for engineering teams.",
+      description: "Built data analytics solutions and dashboards for retail product performance tracking.",
       achievements: [
-        "Developed real-time DevOps monitoring dashboard integrating Jenkins and GitLab pipelines",
-        "Improved visibility and efficiency for internal development teams",
-        "Implemented Grafana-style metrics and visualizations using React and Node.js"
+        "Built PowerBI + SQL dashboards to track performance of retail products across major US & Canada retailers",
+        "Automated legacy reporting workflows, saving 15+ hours per week in manual reporting",
+        "Delivered actionable forecasts and insights for 20+ retailers across North America"
+      ]
+    },
+    {
+      id: "4",
+      company: "Restaurant Brands International (RBI)",
+      position: "Analyst",
+      location: "Toronto, Canada",
+      startDate: "March 2020",
+      endDate: "March 2021",
+      current: false,
+      description: "Supported national delivery program rollout during COVID-19 response.",
+      achievements: [
+        "Supported national rollout of third-party delivery (UberEats, DoorDash, SkipTheDishes) to 1000+ Tim Hortons locations",
+        "Managed onboarding for Tim Hortons stores to the delivery program during the Tim Hortons response to COVID-19",
+        "Automated inventory workflows and coordinated launch of 15+ new SKUs nationwide"
+      ]
+    },
+    {
+      id: "5",
+      company: "Ericsson",
+      position: "Software Developer",
+      location: "Montreal, Canada",
+      startDate: "May 2017",
+      endDate: "May 2018",
+      current: false,
+      description: "Developed internal tools and DevOps systems for engineering teams.",
+      achievements: [
+        "Developed an internal documentation tool using React and Node enabling documentation generation from a web UI",
+        "Built and deployed a DevOps monitoring dashboard using Angular and Java integrating CI/CD pipelines to provide DevOps visibility for internal teams"
       ]
     }
   ],
