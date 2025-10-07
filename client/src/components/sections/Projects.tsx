@@ -106,38 +106,42 @@ export function Projects() {
               {/* Card Footer: Action Buttons */}
               <CardFooter className="flex gap-2">
                 
-                {/* Live Demo Button */}
-                <Button 
-                  asChild 
-                  className="flex-1"
-                  data-testid={`button-live-demo-${project.id}`}
-                >
-                  <a 
-                    href={project.liveUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                {/* Live Demo Button - Only show if liveUrl exists */}
+                {project.liveUrl && (
+                  <Button 
+                    asChild 
+                    className="flex-1"
+                    data-testid={`button-live-demo-${project.id}`}
                   >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </a>
-                </Button>
+                    <a 
+                      href={project.liveUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
                 
-                {/* GitHub Source Button */}
-                <Button 
-                  variant="outline" 
-                  asChild 
-                  className="flex-1"
-                  data-testid={`button-source-${project.id}`}
-                >
-                  <a 
-                    href={project.githubUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                {/* GitHub Source Button - Only show if githubUrl exists */}
+                {project.githubUrl && (
+                  <Button 
+                    variant="outline" 
+                    asChild 
+                    className="flex-1"
+                    data-testid={`button-source-${project.id}`}
                   >
-                    <Github className="mr-2 h-4 w-4" />
-                    Source
-                  </a>
-                </Button>
+                    <a 
+                      href={project.githubUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      Source
+                    </a>
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           ))}
