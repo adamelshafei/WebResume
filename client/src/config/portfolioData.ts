@@ -69,13 +69,21 @@ export const portfolioData = {
   // RECOMMENDED: 3-6 projects for optimal layout (displays in 3-column grid on desktop)
   projects: [
     {
+      id: "0",
+      title: "Personal Portfolio webapp",
+      description: "Modern, responsive portfolio website showcasing projects and experience. Built with React, TypeScript, and Tailwind CSS with dark mode support and smooth animations.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "shadcn/ui"],
+      achievement: "Designed and developed a clean, performant portfolio with modern UI/UX principles and full mobile responsiveness.",
+      liveUrl: "/",
+      githubUrl: "https://github.com/adamelshafei/PersonalResume"
+    },
+    {
       id: "1",
       title: "Agora API Integration Platform",
       description: "API integration platform for hospitality connecting Property Management Systems with third-party services including POS, CRMs, channel managers, and revenue management systems.",
       technologies: ["REST APIs", "Lightspeed", "Toast", "Revinate", "Product Strategy"],
       achievement: "Led data-driven discovery and delivery of 20+ API integrations, driving 10× API adoption and $300K+ ARR growth.",
-      liveUrl: "https://valsoft.com",
-      githubUrl: "https://github.com/adamelshafei"
+      liveUrl: "https://valsoft.com"
     },
     {
       id: "2",
@@ -83,8 +91,7 @@ export const portfolioData = {
       description: "Legacy hospitality Property Management System (PMS) modernization and feature delivery for hotel and hospitality operations.",
       technologies: ["Hospitality Tech", "PMS", "Product Strategy", "API Integrations"],
       achievement: "Owned product strategy and delivery for legacy PMS platform serving hospitality industry.",
-      liveUrl: "https://valsoft.com",
-      githubUrl: "https://github.com/adamelshafei"
+      liveUrl: "https://www.roommaster.com/"
     },
     {
       id: "3",
@@ -92,8 +99,7 @@ export const portfolioData = {
       description: "The leading marina management platform in the United States, providing comprehensive solutions for marina operations and customer management.",
       technologies: ["SaaS", "Marina Tech", "Product Strategy", "Payment Platform"],
       achievement: "Owned product strategy and end-to-end delivery of payment platform now processing $10M+ annually.",
-      liveUrl: "https://dockmaster.com",
-      githubUrl: "https://github.com/adamelshafei"
+      liveUrl: "https://www.dockmaster.com/"
     },
     {
       id: "4",
@@ -101,8 +107,7 @@ export const portfolioData = {
       description: "Shared UI component library for mobile app redesigns across Restaurant Brands International's major QSR brands.",
       technologies: ["React Native", "UI Components", "Cross-functional Coordination"],
       achievement: "Coordinated 3 engineering teams, design and QA to deliver reusable component library across major brands.",
-      liveUrl: "https://rbi.com",
-      githubUrl: "https://github.com/adamelshafei"
+      liveUrl: "https://www.timhortons.ca/?lang=en"
     },
     {
       id: "5",
@@ -110,8 +115,7 @@ export const portfolioData = {
       description: "Automated PowerBI and SQL dashboards for tracking retail product performance across major US and Canada retailers.",
       technologies: ["PowerBI", "SQL", "Data Analytics", "Automation"],
       achievement: "Built dashboards and automated reporting workflows, saving 15+ hours per week while delivering insights for 20+ retailers.",
-      liveUrl: "https://rbi.com",
-      githubUrl: "https://github.com/adamelshafei"
+      liveUrl: "https://timshop.timhortons.ca/"
     },
     {
       id: "6",
@@ -119,17 +123,14 @@ export const portfolioData = {
       description: "National rollout of third-party delivery (UberEats, DoorDash, SkipTheDishes) to 1000+ Tim Hortons locations during COVID-19 response.",
       technologies: ["Program Management", "Delivery Platforms", "Operations"],
       achievement: "Managed onboarding for 1000+ stores and coordinated launch of 15+ new SKUs nationwide during pandemic response.",
-      liveUrl: "https://timhortons.com",
-      githubUrl: "https://github.com/adamelshafei"
+      liveUrl: "https://www.timhortons.com/tim-hortons-delivery"
     },
     {
       id: "7",
       title: "Ericsson Internal DevOps Tools",
       description: "Internal documentation tool and DevOps monitoring dashboard integrating CI/CD pipelines for engineering teams.",
       technologies: ["React", "Node.js", "Angular", "Java", "DevOps"],
-      achievement: "Built documentation generation tool and monitoring dashboard providing DevOps visibility for internal teams.",
-      liveUrl: "https://ericsson.com",
-      githubUrl: "https://github.com/adamelshafei"
+      achievement: "Built documentation generation tool and monitoring dashboard providing DevOps visibility for internal teams."
     }
   ],
   
