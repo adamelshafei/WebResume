@@ -1,4 +1,4 @@
-# Clarity Portfolio Template
+# WebResume Portfolio Template
 
 A modern, open-source personal portfolio template built with React, TypeScript, and shadcn/ui. Perfect for developers, designers, and professionals looking for a clean, customizable portfolio website.
 

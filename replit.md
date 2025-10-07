@@ -1,4 +1,4 @@
-# Clarity Portfolio Template
+# WebResume Portfolio Template
 
 ## Overview
 
