@@ -28,7 +28,7 @@
  * - Lucide icons - ExternalLink and Github icons
  */
 
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Link } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -106,7 +106,7 @@ export function Projects() {
               {/* Card Footer: Action Buttons */}
               <CardFooter className="flex gap-2">
                 
-                {/* Live Demo Button - Only show if liveUrl exists */}
+                {/* Live Demo/Link Button - Only show if liveUrl exists */}
                 {project.liveUrl && (
                   <Button 
                     asChild 
@@ -118,8 +118,17 @@ export function Projects() {
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
+                      {project.githubUrl ? (
+                        <>
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Live Demo
+                        </>
+                      ) : (
+                        <>
+                          <Link className="mr-2 h-4 w-4" />
+                          Link
+                        </>
+                      )}
                     </a>
                   </Button>
                 )}
