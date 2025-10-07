@@ -29,9 +29,9 @@ export const portfolioData = {
     email: "adam.elshafei12@gmail.com",      // Contact email
     social: {
       // Add your social media URLs (these appear as icon buttons)
-      github: "https://github.com/Adam-shafey",
+      github: "https://github.com/adamelshafei",
       linkedin: "https://www.linkedin.com/in/adam-elshafei/"
-      // To remove a social link: comment it out or delete the line
+      // To remove a social link: comment out or delete the line
       // To add more: add new properties here, then update Hero.tsx and Contact.tsx
     }
   },
