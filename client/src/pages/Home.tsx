@@ -1,43 +1,69 @@
 /**
- * HOME PAGE - Main Portfolio Page
- * ================================
- * Single-page portfolio layout with all sections stacked vertically.
+ * HOME PAGE - Responsive Portfolio Layout
+ * ========================================
+ * Displays different layouts based on screen size:
+ * - MOBILE (< 768px): Linktree-style simplified layout
+ * - DESKTOP (>= 768px): Full portfolio with all sections
  * 
- * STRUCTURE:
+ * MOBILE LAYOUT (Linktree-style):
+ * - Profile section with avatar and bio
+ * - Desktop prompt banner
+ * - Stacked action buttons (projects, experience, resume, contact)
+ * - Social links
+ * - Minimal, easy-to-tap interface
+ * 
+ * DESKTOP LAYOUT (Full Portfolio):
  * 1. Header (sticky navigation)
  * 2. Hero (welcome section)
  * 3. About (bio and skills)
- * 4. Projects (portfolio grid)
- * 5. Contact (CTA and footer)
+ * 4. Experience (work history timeline)
+ * 5. Projects (portfolio grid)
+ * 6. Contact (CTA and footer)
  * 
- * NAVIGATION:
- * - Uses anchor links (#hero, #about, etc.) with smooth scrolling
- * - No page routing - all content on one page
- * - Header is sticky and always visible
+ * RESPONSIVE LOGIC:
+ * - useIsMobile hook detects screen width
+ * - Automatically switches layout on resize
+ * - Breakpoint: 768px (Tailwind md)
  * 
  * CUSTOMIZATION:
- * - To reorder sections: Change the order of components in <main>
- * - To remove a section: Delete the import and component
- * - To add a section: Create component, import it, add to <main>
+ * - Change breakpoint in useIsMobile hook
+ * - Edit MobileLayout for mobile experience
+ * - Modify desktop sections as needed
  * 
- * SECTIONS INCLUDED:
- * - Header: Navigation and theme toggle
- * - Hero: Name, title, tagline, social links
- * - About: Biography and skills
- * - Projects: Portfolio items grid
- * - Contact: Email CTA and footer
- * 
- * NOTE: All section content comes from client/src/config/portfolioData.ts
+ * NOTE: All content comes from client/src/config/portfolioData.ts
  */
 
+import { useState } from "react";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Contact } from "@/components/sections/Contact";
+import { MobileLayout } from "@/components/MobileLayout";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export default function Home() {
+  // Detect if user is on mobile device (< 768px)
+  const isMobile = useIsMobile();
+  
+  // State to track if user wants to force desktop view on mobile
+  const [forceDesktop, setForceDesktop] = useState(false);
+
+  /**
+   * Switch from mobile to desktop view
+   * Allows mobile users to access full portfolio when needed
+   */
+  const switchToDesktop = () => {
+    setForceDesktop(true);
+  };
+
+  // Show Linktree-style layout on mobile (unless user forces desktop)
+  if (isMobile && !forceDesktop) {
+    return <MobileLayout onSwitchToDesktop={switchToDesktop} />;
+  }
+
+  // Show full portfolio on desktop
   return (
     <div className="min-h-screen">
       {/* Sticky Header - always visible */}

@@ -2,11 +2,44 @@
 
 ## Overview
 
-A modern, single-page portfolio template built with React, TypeScript, and shadcn/ui components. This is a 100% frontend application designed for developers and professionals to showcase their work with zero backend requirements. The entire site is configured through a single data file, making customization straightforward without touching component code.
+A modern, responsive portfolio template built with React, TypeScript, and shadcn/ui components. Features a **dual-layout responsive design**: full portfolio on desktop and **Linktree-style mobile interface** for optimal mobile experience. This is a 100% frontend application designed for developers and professionals to showcase their work with zero backend requirements. The entire site is configured through a single data file, making customization straightforward without touching component code.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+## Recent Updates (January 2025)
+
+### Mobile Linktree Layout
+- **Responsive dual-layout system**: Automatic detection of mobile vs desktop
+- **Mobile (<768px)**: Linktree-style simplified interface with:
+  - Profile section (avatar, name, title, tagline)
+  - Desktop viewing prompt banner
+  - Stacked action buttons (Projects, Experience, Resume, Contact)
+  - Social media links
+  - Clean, tap-friendly design
+- **Desktop (≥768px)**: Full portfolio with all sections
+- Custom `useIsMobile` hook for responsive detection
+
+### Experience Section
+- New professional timeline component with vertical timeline design
+- Work history cards showing:
+  - Position, company, location, dates
+  - "Current" badge for active roles
+  - Achievements and key responsibilities
+- Fully responsive layout
+- Data-driven from `portfolioData.experience`
+
+### Contact Information
+- **Email**: adam.elshafei12@gmail.com
+- **GitHub**: https://github.com/Adam-shafey
+- **LinkedIn**: https://www.linkedin.com/in/adam-elshafei/
+- Twitter removed from all sections
+
+### Resume Download
+- Downloadable PDF resume in Hero section
+- Outline button styling matching project demo links
+- Available on both desktop and mobile layouts
 
 ## System Architecture
 
@@ -21,15 +54,18 @@ Preferred communication style: Simple, everyday language.
 - **State Management:** React hooks and Context API (ThemeProvider for dark mode)
 
 **Design Principles:**
+- Responsive, mobile-first architecture with adaptive layouts
 - Component-based architecture with clear separation of concerns
 - All content decoupled into a single configuration file (`client/src/config/portfolioData.ts`)
-- Mobile-first responsive design
+- Dual-layout responsive design (Linktree mobile + full desktop)
 - Dark mode support with persistent theme storage via localStorage
 
 **Component Structure:**
 - **Section Components** (`client/src/components/sections/`): Independent, self-contained page sections (Header, Hero, About, Experience, Projects, Contact)
+- **Mobile Layout** (`client/src/components/MobileLayout.tsx`): Linktree-style mobile interface
 - **UI Components** (`client/src/components/ui/`): shadcn/ui primitive components
-- **Layout:** Single-page layout with sticky header and smooth scroll navigation
+- **Custom Hooks** (`client/src/hooks/`): useIsMobile for responsive detection, useTheme for dark mode
+- **Layout Logic:** Conditional rendering based on screen width (768px breakpoint)
 - **Theme System:** CSS variables-based theming in `client/src/index.css` with light/dark mode variants
 
 **Key Architectural Decisions:**
@@ -38,11 +74,13 @@ Preferred communication style: Simple, everyday language.
 
 2. **Single Configuration File:** All portfolio content (personal info, projects, skills, experience) lives in `portfolioData.ts`, enabling non-technical users to customize without understanding React
 
-3. **CSS Variable Theming:** Colors defined as HSL values in CSS variables allow theme customization by editing one file (`index.css`) without touching component code
+3. **Responsive Dual-Layout System:** Automatically switches between Linktree-style mobile and full desktop portfolio based on screen width for optimal UX on all devices
 
-4. **shadcn/ui Exclusivity:** Enforces consistent design system by using only shadcn/ui components rather than custom implementations
+4. **CSS Variable Theming:** Colors defined as HSL values in CSS variables allow theme customization by editing one file (`index.css`) without touching component code
 
-5. **Anchor Link Navigation:** Uses smooth scrolling to section IDs instead of multi-page routing, keeping the experience as a cohesive single page
+5. **shadcn/ui Exclusivity:** Enforces consistent design system by using only shadcn/ui components rather than custom implementations
+
+6. **Anchor Link Navigation:** Uses smooth scrolling to section IDs instead of multi-page routing, keeping the experience as a cohesive single page
 
 ### Data Management
 
