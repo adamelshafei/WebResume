@@ -1,11 +1,38 @@
+/**
+ * HERO SECTION - Landing/Welcome Section
+ * =======================================
+ * The first thing visitors see - full-screen welcome section with:
+ * - Your name and title
+ * - Professional tagline
+ * - CTA button to view projects
+ * - Social media icon buttons
+ * 
+ * DATA SOURCE: All content comes from portfolioData.personal
+ * 
+ * CUSTOMIZATION:
+ * - Edit greeting text on line 27 (currently "Hello, my name is...")
+ * - Modify CTA button text on line 46
+ * - Add/remove social icons (also update Contact.tsx for consistency)
+ * - Adjust spacing/sizing via Tailwind classes
+ * 
+ * COMPONENTS USED:
+ * - Button (shadcn/ui) - CTA and social icons
+ * - Separator (shadcn/ui) - Visual divider line
+ * - Lucide icons - Social media icons
+ */
+
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { portfolioData } from "@/config/portfolioData";
 
 export function Hero() {
+  // Extract personal data from portfolio config
   const { personal } = portfolioData;
 
+  /**
+   * Smooth scroll to a section by ID
+   */
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -18,21 +45,29 @@ export function Hero() {
     >
       <div className="mx-auto max-w-4xl text-center">
         <div className="space-y-6">
+          
+          {/* Main Heading - Name */}
           <h1 className="text-5xl font-bold tracking-tight md:text-7xl" data-testid="text-name">
             Hello, my name is {personal.name}.
           </h1>
           
+          {/* Professional Title */}
           <p className="text-xl font-medium text-muted-foreground md:text-2xl" data-testid="text-title">
             {personal.title}
           </p>
 
+          {/* Visual Separator */}
           <Separator className="mx-auto w-24" />
 
+          {/* Tagline/Professional Summary */}
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg" data-testid="text-tagline">
             {personal.tagline}
           </p>
 
+          {/* CTA Button and Social Links */}
           <div className="flex flex-col items-center gap-6 pt-4">
+            
+            {/* Primary CTA - Scrolls to Projects */}
             <Button 
               size="lg" 
               onClick={() => handleScroll("projects")}
@@ -41,7 +76,10 @@ export function Hero() {
               View My Work
             </Button>
 
+            {/* Social Media Icon Buttons */}
             <div className="flex items-center gap-2">
+              
+              {/* GitHub */}
               <Button
                 variant="ghost"
                 size="icon"
@@ -58,6 +96,7 @@ export function Hero() {
                 </a>
               </Button>
 
+              {/* LinkedIn */}
               <Button
                 variant="ghost"
                 size="icon"
@@ -74,6 +113,7 @@ export function Hero() {
                 </a>
               </Button>
 
+              {/* Twitter/X */}
               <Button
                 variant="ghost"
                 size="icon"
@@ -90,6 +130,7 @@ export function Hero() {
                 </a>
               </Button>
 
+              {/* Email */}
               <Button
                 variant="ghost"
                 size="icon"

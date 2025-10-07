@@ -1,3 +1,25 @@
+/**
+ * HEADER COMPONENT - Navigation Bar
+ * ==================================
+ * Sticky header with navigation links, logo, and dark mode toggle.
+ * 
+ * FEATURES:
+ * - Desktop: Horizontal nav menu with all links visible
+ * - Mobile: Hamburger menu that opens a Sheet (slide-out drawer)
+ * - Smooth scroll to sections using anchor links
+ * - Theme toggle (sun/moon icon)
+ * 
+ * CUSTOMIZATION:
+ * - Edit navItems array to add/remove navigation links
+ * - Change logo text on line 42
+ * - Modify header styling via Tailwind classes
+ * 
+ * COMPONENTS USED:
+ * - Button (shadcn/ui) - All clickable elements
+ * - Sheet (shadcn/ui) - Mobile menu drawer
+ * - Lucide icons - Moon, Sun, Menu icons
+ */
+
 import { Moon, Sun, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/ThemeProvider";
@@ -8,17 +30,24 @@ import {
 } from "@/components/ui/sheet";
 import { useState } from "react";
 
+// Navigation items - add/remove items here to customize menu
 const navItems = [
   { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
+  // To add new nav item: { label: "Blog", href: "#blog" }
 ];
 
 export function Header() {
   const { theme, setTheme } = useTheme();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);  // Controls mobile menu open/close
 
+  /**
+   * Handles smooth scrolling to sections
+   * - Closes mobile menu if open
+   * - Waits 100ms for menu to close, then scrolls
+   */
   const handleNavClick = (href: string) => {
     setOpen(false);
     setTimeout(() => {
@@ -30,6 +59,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+        
+        {/* Logo/Brand - Click to scroll to top */}
         <a 
           href="#hero" 
           className="text-xl font-bold tracking-tight"
@@ -39,9 +70,10 @@ export function Header() {
             handleNavClick("#hero");
           }}
         >
-          Portfolio
+          Portfolio  {/* CUSTOMIZE: Change this text to your name/brand */}
         </a>
 
+        {/* Desktop Navigation - Hidden on mobile (md:flex) */}
         <nav className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => (
             <Button
@@ -63,7 +95,10 @@ export function Header() {
           ))}
         </nav>
 
+        {/* Right side: Theme toggle + Mobile menu */}
         <div className="flex items-center gap-2">
+          
+          {/* Theme Toggle Button */}
           <Button
             variant="ghost"
             size="icon"
@@ -77,6 +112,7 @@ export function Header() {
             )}
           </Button>
 
+          {/* Mobile Menu - Only visible on small screens */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon" data-testid="button-menu-toggle">
