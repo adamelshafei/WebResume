@@ -28,7 +28,7 @@
  * NOTE: Social links should match Hero section - update both if changed
  */
 
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/config/portfolioData";
 
@@ -109,23 +109,6 @@ export function Contact() {
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-4 w-4" />
-                </a>
-              </Button>
-
-              {/* Twitter/X */}
-              <Button
-                variant="ghost"
-                size="icon"
-                asChild
-                data-testid="button-footer-twitter"
-              >
-                <a 
-                  href={personal.social.twitter} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="h-4 w-4" />
                 </a>
               </Button>
 

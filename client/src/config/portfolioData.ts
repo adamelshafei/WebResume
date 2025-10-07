@@ -26,12 +26,11 @@ export const portfolioData = {
     name: "Adam Elshafei",                    // Your full name
     title: "Product Manager",                 // Your job title/role
     tagline: "Product Manager specializing in API platforms, payment systems, and data-driven product delivery. I leverage AI-assisted prototyping and lean experimentation to validate features fast and drive product-market fit.",
-    email: "abdoshafey1@gmail.com",          // Contact email
+    email: "adam.elshafei12@gmail.com",      // Contact email
     social: {
       // Add your social media URLs (these appear as icon buttons)
-      github: "https://github.com/adamelshafei",
-      linkedin: "https://linkedin.com/in/adam-elshafei",
-      twitter: "https://twitter.com/adamelshafei"
+      github: "https://github.com/Adam-shafey",
+      linkedin: "https://www.linkedin.com/in/adam-elshafei/"
       // To remove a social link: comment it out or delete the line
       // To add more: add new properties here, then update Hero.tsx and Contact.tsx
     }
@@ -115,6 +114,59 @@ export const portfolioData = {
       githubUrl: "https://github.com/ericsson/devops-dashboard"
     }
     // To add more projects: copy the structure above and increment the ID
+  ],
+  
+  // ============================================================================
+  // EXPERIENCE SECTION
+  // ============================================================================
+  // Array of work experience in reverse chronological order (most recent first)
+  experience: [
+    {
+      id: "1",
+      company: "Valsoft",
+      position: "Product Manager",
+      location: "Toronto, Canada",
+      startDate: "June 2024",
+      endDate: "Present",
+      current: true,
+      description: "Leading product strategy and delivery for multiple B2B SaaS platforms in hospitality and marina management industries.",
+      achievements: [
+        "Owned product strategy for Agora (API integration platform), RoomMaster (hospitality PMS), and DockMaster (marina management)",
+        "Led delivery of 20+ API integrations driving 10× adoption and $300K+ ARR growth",
+        "Owned end-to-end delivery of payment platform now processing $10M+ annually",
+        "Built data-driven roadmaps that improved delivery speed by 30%+"
+      ]
+    },
+    {
+      id: "2",
+      company: "Restaurant Brands International (RBI)",
+      position: "Associate Product Manager",
+      location: "Toronto, Canada",
+      startDate: "January 2024",
+      endDate: "June 2024",
+      current: false,
+      description: "Led mobile app redesign initiatives across Tim Hortons, Burger King, and Popeyes brands.",
+      achievements: [
+        "Coordinated 3 engineering teams, design and QA to deliver shared UI component library",
+        "Defined product requirements and user stories for mobile app component systems",
+        "Partnered with UX/UI teams to ensure consistent brand experience across QSR applications"
+      ]
+    },
+    {
+      id: "3",
+      company: "Ericsson",
+      position: "Software Engineer",
+      location: "Ottawa, Canada",
+      startDate: "May 2023",
+      endDate: "August 2023",
+      current: false,
+      description: "Built internal DevOps tools and monitoring systems for engineering teams.",
+      achievements: [
+        "Developed real-time DevOps monitoring dashboard integrating Jenkins and GitLab pipelines",
+        "Improved visibility and efficiency for internal development teams",
+        "Implemented Grafana-style metrics and visualizations using React and Node.js"
+      ]
+    }
   ],
   
   // ============================================================================

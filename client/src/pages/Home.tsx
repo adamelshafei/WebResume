@@ -33,6 +33,7 @@
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
+import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Contact } from "@/components/sections/Contact";
 
@@ -44,10 +45,11 @@ export default function Home() {
       
       {/* Main Content - all sections in order */}
       <main>
-        <Hero />      {/* Landing section with name and CTA */}
-        <About />     {/* Bio and skills */}
-        <Projects />  {/* Portfolio grid */}
-        <Contact />   {/* Email CTA and footer */}
+        <Hero />        {/* Landing section with name and CTA */}
+        <About />       {/* Bio and skills */}
+        <Experience />  {/* Work history timeline */}
+        <Projects />    {/* Portfolio grid */}
+        <Contact />     {/* Email CTA and footer */}
       </main>
     </div>
   );

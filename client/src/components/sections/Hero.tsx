@@ -21,10 +21,11 @@
  * - Lucide icons - Social media icons
  */
 
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { portfolioData } from "@/config/portfolioData";
+import resumePDF from "@assets/Adam Elshafei, PM.docx_1759861029618.pdf";
 
 export function Hero() {
   // Extract personal data from portfolio config
@@ -67,14 +68,31 @@ export function Hero() {
           {/* CTA Button and Social Links */}
           <div className="flex flex-col items-center gap-6 pt-4">
             
-            {/* Primary CTA - Scrolls to Projects */}
-            <Button 
-              size="lg" 
-              onClick={() => handleScroll("projects")}
-              data-testid="button-view-work"
-            >
-              View My Work
-            </Button>
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <Button 
+                size="lg" 
+                onClick={() => handleScroll("projects")}
+                data-testid="button-view-work"
+              >
+                View My Work
+              </Button>
+              
+              <Button 
+                size="lg"
+                variant="outline"
+                asChild
+                data-testid="button-download-resume"
+              >
+                <a 
+                  href={resumePDF} 
+                  download="Adam_Elshafei_Resume.pdf"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Resume
+                </a>
+              </Button>
+            </div>
 
             {/* Social Media Icon Buttons */}
             <div className="flex items-center gap-2">
@@ -110,23 +128,6 @@ export function Hero() {
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
-
-              {/* Twitter/X */}
-              <Button
-                variant="ghost"
-                size="icon"
-                asChild
-                data-testid="button-twitter"
-              >
-                <a 
-                  href={personal.social.twitter} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="h-5 w-5" />
                 </a>
               </Button>
 
