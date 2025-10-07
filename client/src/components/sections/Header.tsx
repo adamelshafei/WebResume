@@ -64,14 +64,17 @@ export function Header() {
         {/* Logo/Brand - Click to scroll to top */}
         <a 
           href="#hero" 
-          className="text-xl font-bold tracking-tight"
+          className="flex items-center gap-3"
           data-testid="link-logo"
           onClick={(e) => {
             e.preventDefault();
             handleNavClick("#hero");
           }}
         >
-          Portfolio  {/* CUSTOMIZE: Change this text to your name/brand */}
+          {/* Circular logo with initials */}
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-700 dark:bg-gray-600">
+            <span className="text-sm font-bold text-white">AE</span>
+          </div>
         </a>
 
         {/* Desktop Navigation - Hidden on mobile (md:flex) */}
