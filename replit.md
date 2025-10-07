@@ -18,8 +18,10 @@ Preferred communication style: Simple, everyday language.
   - Stacked action buttons (Projects, Experience, Resume, Contact)
   - Social media links
   - Clean, tap-friendly design
+  - **Mobile Navigation**: Action buttons switch to desktop view to display full content
 - **Desktop (≥768px)**: Full portfolio with all sections
 - Custom `useIsMobile` hook for responsive detection
+- `forceDesktop` state allows mobile users to access full portfolio when clicking action buttons
 
 ### Experience Section
 - New professional timeline component with vertical timeline design
