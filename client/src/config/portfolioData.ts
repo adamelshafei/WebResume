@@ -1,72 +1,81 @@
 export const portfolioData = {
   personal: {
-    name: "Shawn Elbaz",
-    title: "Development Manager",
-    tagline: "I'm a Senior Software Engineer with expertise in full-stack development, cloud architecture, and team leadership. I specialize in building scalable applications using modern technologies and best practices.",
-    email: "shawn@example.com",
+    name: "Adam Elshafei",
+    title: "Product Manager",
+    tagline: "Product Manager specializing in API platforms, payment systems, and data-driven product delivery. I leverage AI-assisted prototyping and lean experimentation to validate features fast and drive product-market fit.",
+    email: "abdoshafey1@gmail.com",
     social: {
-      github: "https://github.com/shawnelbaz",
-      linkedin: "https://linkedin.com/in/shawnelbaz",
-      twitter: "https://twitter.com/shawnelbaz"
+      github: "https://github.com/adamelshafei",
+      linkedin: "https://linkedin.com/in/adam-elshafei",
+      twitter: "https://twitter.com/adamelshafei"
     }
   },
   
   about: {
     bio: [
-      "I'm a Senior Software Engineer with expertise in full-stack development, cloud architecture, and team leadership. I specialize in building scalable applications using modern technologies and best practices.",
-      "With over 8 years of experience, I've led teams in delivering enterprise solutions across various industries. My approach combines technical excellence with a deep understanding of business needs, ensuring solutions that drive real value.",
-      "I'm passionate about open-source contributions, mentoring developers, and staying at the forefront of technology trends. When I'm not coding, you'll find me exploring new frameworks or contributing to the developer community."
+      "I'm a Product Manager with a strong technical background in software engineering. I combine data-driven product strategy with hands-on prototyping to deliver features that users love and businesses need.",
+      "At Valsoft, I owned product strategy for multiple platforms including Agora (API integration platform), RoomMaster (hospitality PMS), and DockMaster (marina management). I led delivery of 20+ API integrations driving 10× adoption and $300K+ ARR growth, and owned a payment platform now processing $10M+ annually.",
+      "I use AI-assisted prototyping (Cursor, Replit, Vercel) to validate ideas in hours instead of weeks, build data-driven roadmaps that improve delivery speed by 30%+, and partner closely with engineering, design, and go-to-market teams to ship winning products."
     ],
     skills: [
-      "JavaScript", "TypeScript", "React", "Node.js", "Python", "FastAPI",
-      "Azure", "AWS", ".NET", "PostgreSQL", "MongoDB", "Docker",
-      "Kubernetes", "Service Bus", "CosmosDB", "API Gateway",
-      "Lambda", "Step Functions", "Git", "Jira"
+      "Product Strategy", "AI Prototyping", "Product Roadmaps", "PRDs", "Agile/Scrum",
+      "Product Discovery", "Jira", "Confluence", "Figma", "KPIs",
+      "Python", "Node.js", "React", "JavaScript", "REST APIs",
+      "Git", "PowerBI", "SQL", "Market Analysis"
     ]
   },
   
   projects: [
     {
       id: "1",
-      title: "RoomMaster / Agora",
-      description: "A critical middleware platform connecting Property Management Systems (PMS) with third-party services.",
-      technologies: ["Azure Serverless", "API Gateway", "Service Bus", "CosmosDB"],
-      achievement: "Seamlessly integrates with services like Lightspeed POS, improving hotel operations efficiency.",
-      liveUrl: "https://example.com/roommaster",
-      githubUrl: "https://github.com/example/roommaster"
+      title: "Agora API Integration Platform",
+      description: "API integration platform for hospitality connecting Property Management Systems with third-party services (POS, CRMs, channel managers, revenue management systems).",
+      technologies: ["REST APIs", "Lightspeed", "Toast", "Revinate", "Hospitality Tech"],
+      achievement: "Led data-driven discovery and delivery of 20+ API integrations, driving 10× API adoption and $300K+ ARR growth.",
+      liveUrl: "https://valsoft.com/agora",
+      githubUrl: "https://github.com/valsoft/agora"
     },
     {
       id: "2",
-      title: "DockMaster / DMPay",
-      description: "Payment processing and marina management integration solution.",
-      technologies: ["Azure", ".NET", "React", "Python", "FastAPI", "PostgreSQL"],
-      achievement: "Streamlined payment processing for marina operations.",
-      liveUrl: "https://example.com/dockmaster",
-      githubUrl: "https://github.com/example/dockmaster"
+      title: "Payment Platform",
+      description: "End-to-end payment processing platform with full compliance and regulatory requirements for hospitality and marina industries.",
+      technologies: ["Payment Processing", "Compliance", "REST APIs", "Node.js"],
+      achievement: "Owned end-to-end delivery and compliance of a payment platform now processing $10M+ annually.",
+      liveUrl: "https://valsoft.com/payments",
+      githubUrl: "https://github.com/valsoft/payments"
     },
     {
       id: "3",
-      title: "Valpay",
-      description: "Enterprise payment processing platform for multiple business verticals.",
-      technologies: ["AWS", "Docker", "Node.js", "MongoDB", "Lambda", "Step Functions"],
-      achievement: "Unified payment solution across diverse business domains.",
-      liveUrl: "https://example.com/valpay",
-      githubUrl: "https://github.com/example/valpay"
+      title: "DockMaster Marina Management",
+      description: "The leading marina management platform in the United States, providing comprehensive solutions for marina operations and customer management.",
+      technologies: ["SaaS", "Marina Tech", "Product Strategy", "API Integrations"],
+      achievement: "Owned product strategy and feature delivery, improving operational efficiency for marinas across the US.",
+      liveUrl: "https://dockmaster.com",
+      githubUrl: "https://github.com/valsoft/dockmaster"
     },
     {
       id: "4",
-      title: "Valsource",
-      description: "Sophisticated M&A cold outreach tool featuring advanced company profiling.",
-      technologies: ["Python", "FastAPI", "AWS Lambda", "Step Functions"],
-      achievement: "Automated web scraping and ETL pipelines for company/contact profiling.",
-      liveUrl: "https://example.com/valsource",
-      githubUrl: "https://github.com/example/valsource"
+      title: "RBI Mobile App Component Library",
+      description: "Shared UI component library for mobile app redesigns across Tim Hortons, Burger King, and Popeyes brands.",
+      technologies: ["React Native", "UI Components", "Cross-functional Coordination"],
+      achievement: "Coordinated 3 engineering teams, design and QA to deliver reusable components across major QSR brands.",
+      liveUrl: "https://rbi.com",
+      githubUrl: "https://github.com/rbi/mobile-components"
+    },
+    {
+      id: "5",
+      title: "DevOps Monitoring Dashboard",
+      description: "Internal DevOps monitoring dashboard integrating Jenkins and GitLab pipelines, providing Grafana-style visibility for engineering teams.",
+      technologies: ["React", "Node.js", "Jenkins", "GitLab", "DevOps"],
+      achievement: "Built and deployed real-time monitoring dashboard improving visibility and efficiency for internal teams at Ericsson.",
+      liveUrl: "https://ericsson.com",
+      githubUrl: "https://github.com/ericsson/devops-dashboard"
     }
   ],
   
   contact: {
     title: "Let's Build Something Great Together",
-    description: "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!"
+    description: "I'm always interested in discussing product opportunities, API integrations, or innovative ways to use AI in product development. Feel free to reach out!"
   }
 };
 
