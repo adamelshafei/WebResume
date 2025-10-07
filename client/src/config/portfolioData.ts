@@ -42,9 +42,9 @@ export const portfolioData = {
   about: {
     // Bio: Array of paragraphs (2-4 recommended for best layout)
     bio: [
-      "I'm a Product Manager with a strong technical foundation in software engineering. I combine data-driven product strategy with hands-on prototyping to deliver features that users love and businesses need.",
-      "At Valsoft, I owned product strategy for Agora (API integration platform), RoomMaster (hospitality PMS), and DockMaster (marina management). I led delivery of 20+ API integrations driving 10× adoption and $300K+ ARR growth, and owned end-to-end delivery of a payment platform now processing $10M+ annually.",
-      "I use AI-assisted prototyping (Cursor, Replit) to validate features in hours instead of weeks, build data-driven roadmaps that cut delivery time by 30%+, and partner with engineering, design, and GTM teams to ship winning products."
+      "I'm a Product Manager with a software engineering background, focused on building scalable software that balances UX with feature depth. I bridge strategy and implementation turning complex system challenges into clear, testable product solutions.",
+      "At Valsoft, I led product strategy and delivery for Agora (API integration platform), RoomMaster (hospitality PMS), and DockMaster (marina management system). I worked hands-on with engineering on backend performance, API design, and integrations while owning roadmap delivery and product growth across platforms.",
+      "I use AI-assisted prototyping tools (Cursor, Replit) to validate ideas rapidly, architect data-driven roadmaps that align tech and business goals, and collaborate across engineering, design, and GTM to ship features that perform as well as they scale."
     ],
     
     // Skills: Array of strings that display as badges
