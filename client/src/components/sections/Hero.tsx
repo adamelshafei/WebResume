@@ -49,7 +49,7 @@ export function Hero() {
           
           {/* Main Heading - Name with Highlight */}
           <h1 className="text-4xl font-bold leading-relaxed tracking-tight md:text-6xl lg:text-7xl" data-testid="text-name">
-            Hello, I'm{" "}
+            Hi, I'm{" "}
             <Highlight className="text-black dark:text-white">
               {personal.name}
             </Highlight>

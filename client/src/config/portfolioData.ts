@@ -24,8 +24,8 @@ export const portfolioData = {
   // This appears in the hero section and throughout the site
   personal: {
     name: "Adam Elshafei",                    // Your full name
-    title: "Product Manager & Software Engineer",                 // Your job title/role
-    tagline: "Product Manager with a strong technical foundation in software engineering. I use AI-assisted prototyping to validate features in hours, build data-driven roadmaps, and partner with engineering teams to deliver products that drive growth.",
+    title: "Product Manager and Software Engineer.",                 // Your job title/role
+    tagline: "I'm a Product Manager with a strong technical background and experience in Software engineering and Data Analytics. My current interest is in AI-assisted prototyping and the value it brings to discovery and product market fit. I enjoy building products that leverage cutting edge technologies.",
     email: "adam.elshafei12@gmail.com",      // Contact email
     social: {
       // Add your social media URLs (these appear as icon buttons)
