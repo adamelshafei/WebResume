@@ -8,7 +8,23 @@ A modern, responsive portfolio template built with React, TypeScript, and shadcn
 
 Preferred communication style: Simple, everyday language.
 
-## Recent Updates (January 2025)
+## Recent Updates (October 2025)
+
+### Resume & Content Update
+- **Resume**: Updated to latest "Software Engineer & PM" version with complete work history
+- **Title**: Updated to "Product Manager & Software Engineer" 
+- **Projects**: Now featuring 7 key projects:
+  - Agora API Integration Platform (Valsoft)
+  - RoomMaster hospitality PMS (Valsoft)
+  - DockMaster Marina Management (Valsoft)
+  - Mobile Component Library - Tim Hortons, Burger King, Popeyes (RBI)
+  - PowerBI & SQL Retail Dashboards (RBI)
+  - Tim Hortons Delivery Program (RBI)
+  - Ericsson Internal DevOps Tools
+- **Experience**: Complete work history with 5 roles (Valsoft, RBI x3, Ericsson) with accurate dates and locations
+- **Skills**: Updated to match resume - includes AI Prototyping, Market/Competitor Analysis, PowerBI, SQL
+
+## Previous Updates (January 2025)
 
 ### Mobile Linktree Layout
 - **Responsive dual-layout system**: Automatic detection of mobile vs desktop
@@ -34,9 +50,8 @@ Preferred communication style: Simple, everyday language.
 
 ### Contact Information
 - **Email**: adam.elshafei12@gmail.com
-- **GitHub**: https://github.com/Adam-shafey
+- **GitHub**: https://github.com/adamelshafei
 - **LinkedIn**: https://www.linkedin.com/in/adam-elshafei/
-- Twitter removed from all sections
 
 ### Resume Download
 - Downloadable PDF resume in Hero section
