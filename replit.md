@@ -8,63 +8,6 @@ A modern, responsive portfolio template built with React, TypeScript, and shadcn
 
 Preferred communication style: Simple, everyday language.
 
-## Recent Updates (October 2025)
-
-### Backend Cleanup (October 7, 2025)
-- **Pure Frontend Architecture**: Removed all backend infrastructure to confirm this is a 100% static frontend application
-- **Removed**: `drizzle.config.ts` (database configuration), `shared/` folder (backend schemas)
-- **Minimal Server**: Created lightweight `server/index.ts` that only serves Vite dev server - no API routes or database logic
-- **Dependencies**: Backend packages (Express, Drizzle, Passport, etc.) remain in package.json but are only used for development server, not for any backend functionality
-- **Data Source**: All portfolio content comes from static `client/src/config/portfolioData.ts`
-
-### Resume & Content Update
-- **Resume**: Updated to latest "Software Engineer & PM" version with complete work history
-- **Title**: Updated to "Product Manager & Software Engineer" 
-- **Projects**: Now featuring 7 key projects:
-  - Agora API Integration Platform (Valsoft)
-  - RoomMaster hospitality PMS (Valsoft)
-  - DockMaster Marina Management (Valsoft)
-  - Mobile Component Library - Tim Hortons, Burger King, Popeyes (RBI)
-  - PowerBI & SQL Retail Dashboards (RBI)
-  - Tim Hortons Delivery Program (RBI)
-  - Ericsson Internal DevOps Tools
-- **Experience**: Complete work history with 5 roles (Valsoft, RBI x3, Ericsson) with accurate dates and locations
-- **Skills**: Updated to match resume - includes AI Prototyping, Market/Competitor Analysis, PowerBI, SQL
-
-## Previous Updates (January 2025)
-
-### Mobile Linktree Layout
-- **Responsive dual-layout system**: Automatic detection of mobile vs desktop
-- **Mobile (<768px)**: Linktree-style simplified interface with:
-  - Profile section (avatar, name, title, tagline)
-  - Desktop viewing prompt banner
-  - Stacked action buttons (Projects, Experience, Resume, Contact)
-  - Social media links
-  - Clean, tap-friendly design
-  - **Mobile Navigation**: Action buttons switch to desktop view to display full content
-- **Desktop (≥768px)**: Full portfolio with all sections
-- Custom `useIsMobile` hook for responsive detection
-- `forceDesktop` state allows mobile users to access full portfolio when clicking action buttons
-
-### Experience Section
-- New professional timeline component with vertical timeline design
-- Work history cards showing:
-  - Position, company, location, dates
-  - "Current" badge for active roles
-  - Achievements and key responsibilities
-- Fully responsive layout
-- Data-driven from `portfolioData.experience`
-
-### Contact Information
-- **Email**: adam.elshafei12@gmail.com
-- **GitHub**: https://github.com/adamelshafei
-- **LinkedIn**: https://www.linkedin.com/in/adam-elshafei/
-
-### Resume Download
-- Downloadable PDF resume in Hero section
-- Outline button styling matching project demo links
-- Available on both desktop and mobile layouts
-
 ## System Architecture
 
 ### Frontend Architecture
@@ -161,24 +104,8 @@ Preferred communication style: Simple, everyday language.
 
 **Server (Minimal):**
 - **Express**: Basic HTTP server for development and static file serving
-- **Drizzle ORM + Neon**: Database layer configured but not actively used (prepared for future features)
 - Note: The template is designed to work without the server in production static deployments
 
-**Font Loading:**
-- **Google Fonts CDN**: Inter font family loaded via `<link>` tag in `client/index.html`
-
-### Database Configuration
-
-**Drizzle ORM Setup:**
-- Configured for PostgreSQL via Neon serverless driver
-- Schema defined in `shared/schema.ts` with basic User model
-- Database URL from environment variable `DATABASE_URL`
-- Migration output: `./migrations`
-- **Current Usage:** Database is provisioned but not used by the portfolio template (prepared for future authentication/dynamic features)
-
-**Storage Interface:**
-- In-memory storage implementation (`server/storage.ts`) as fallback
-- Abstracted CRUD interface allows swapping storage backends
 
 ### Configuration Files
 
