@@ -43,9 +43,7 @@ export const portfolioData = {
   about: {
     // Bio: Array of paragraphs (2-4 recommended for best layout)
     bio: [
-      "I'm a Product Manager with a software engineering background, focused on building scalable software that balances UX with feature depth. I bridge strategy and implementation turning complex system challenges into clear, testable product solutions.",
-      "At Valsoft, I led product strategy and delivery for Agora (API integration platform), RoomMaster (hospitality PMS), and DockMaster (marina management system). I worked hands-on with engineering on backend performance, API design, and integrations while owning roadmap delivery and product growth across platforms.",
-      "I use AI-assisted prototyping tools (Cursor, Replit) to validate ideas rapidly, architect data-driven roadmaps that align tech and business goals, and collaborate across engineering, design, and GTM to ship features that perform as well as they scale.",
+      "I’m a Software Engineer with experience leading product development end-to-end from discovery to delivery. I focus on building scalable products that balance strong UX with feature depth, translating complex requirements into clean, testable solutions. I worked as a Product Manager across several industries, including Agora (Hospitality API integration platform), RoomMaster (Hospitality property management system), DockMaster (Marina management system) and Tim Hortons/Burger King/Popeye's mobile apps.",
     ],
 
     // Skills: Array of strings that display as badges
