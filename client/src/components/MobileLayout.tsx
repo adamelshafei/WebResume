@@ -201,7 +201,12 @@ export function MobileLayout({ onSwitchToDesktop }: MobileLayoutProps) {
                 >
                   <a 
                     href={button.href} 
-                    {...(button.download ? { download: button.download } : { target: "_blank", rel: "noopener noreferrer" })}
+                    {...(button.download 
+                      ? { download: button.download } 
+                      : button.href?.startsWith('mailto:') 
+                        ? {} 
+                        : { target: "_blank", rel: "noopener noreferrer" }
+                    )}
                   >
                     {ButtonContent}
                   </a>
